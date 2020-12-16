@@ -29,10 +29,4 @@ module.exports = [
       maxDepth: 2 
     }
   ],
-  [
-    remarkAutoLinkHeading,
-    {
-      behaviour: 'wrap' 
-    }
-  ]
 ]

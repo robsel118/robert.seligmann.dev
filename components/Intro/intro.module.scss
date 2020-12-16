@@ -1,0 +1,9 @@
+.greeting{
+  font-size: var(--text-ultra);
+
+  strong::before{
+    content: ' ';
+  }
+}
+
+  

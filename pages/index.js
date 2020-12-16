@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { getPageBySlug, getPagesPath } from "@/lib/mdx";
+import { Intro } from '@/components/Intro'
 
 export default function Home({intro, about, featured, projects}) {
   return (
@@ -10,6 +11,7 @@ export default function Home({intro, about, featured, projects}) {
       </Head>
 
       <main>
+        <Intro intro={intro}/>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
