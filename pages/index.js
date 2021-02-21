@@ -1,14 +1,16 @@
 import Head from "next/head";
 import { getPageBySlug, getPagesPath } from "@/lib/mdx";
+import { useTheme } from 'next-themes'
 
 export default function Home({intro, about, featured, projects}) {
+  const { setTheme } = useTheme()
   return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
+      <p onClick={()=> {setTheme('dark')}}>Switch to dark</p>
     </div>
   );
 }
